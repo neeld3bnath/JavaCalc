@@ -31,7 +31,6 @@ public class MathList {
         double num2 = Double.parseDouble(parts[1]);
         String operation = expression.replaceAll("[0-9]+(\\.[0-9]+)?", "");
 
-                
         if (operation.equals("+")) {
             double sum = num1 + num2;
             if (sum % 1 == 0) {
@@ -62,13 +61,11 @@ public class MathList {
         if (operation.equals("/")) {
             if (num2 == 0) {
                 return "Cannot divide by zero";
-            }
-            else {
+            } else {
                 double quot = num1 / num2;
                 if (quot % 1 == 0) {
                     return num1 + " / " + num2 + " = " + (int) quot;
-                }
-                else {
+                } else {
                     return num1 + " / " + num2 + " = " + quot;
                 }
             }
@@ -86,8 +83,7 @@ public class MathList {
     public void power(int x, int n) {
         if (x == 0 && n == 0) {
             System.out.println("Undefined");
-        }
-        else {
+        } else {
             Math.pow(x, n);
             System.out.printf("%d^%d = %d\n", x, n, (int) Math.pow(x, n));
         }

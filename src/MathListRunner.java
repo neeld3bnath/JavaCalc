@@ -52,7 +52,7 @@ public class MathListRunner {
                     if (n >= 48) {
                         System.out.println("Too big number");
                     } else {
-                    System.out.printf("Nth term of the Fibonacci sequence: %d\n", mathList.fibonacci(n));
+                        System.out.printf("Nth term of the Fibonacci sequence: %d\n", mathList.fibonacci(n));
                     }
 
                 } else if (optionInt == 4) {
@@ -61,7 +61,7 @@ public class MathListRunner {
                     if (n > Integer.MAX_VALUE) {
                         System.out.println("Too big number");
                     } else {
-                    System.out.printf("Sum of digits: %d\n", mathList.sumOfDigits(n));
+                        System.out.printf("Sum of digits: %d\n", mathList.sumOfDigits(n));
                     }
 
                 } else if (optionInt == 5) {
@@ -81,7 +81,8 @@ public class MathListRunner {
                     String str2 = scanner.next();
                     System.out.println("Enter an operation (+, -, *, /): ");
                     String operation = scanner.next();
-                    System.out.printf("%s %s %s = %s\n", str1, operation, str2, mathList.stringOp(str1, str2, operation));
+                    System.out.printf("%s %s %s = %s\n", str1, operation, str2,
+                            mathList.stringOp(str1, str2, operation));
 
                 } else if (optionInt == 7) {
                     mathList.goodbye();
