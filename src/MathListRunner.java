@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class MathListRunner {
     public static void main(String[] args) {
-        System.out.println("Welcome to my Math program!");
+        System.out.println("Welcome to JavaCalc!");
 
         Scanner scanner = new Scanner(System.in);
         String option = "0";

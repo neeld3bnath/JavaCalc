@@ -26,10 +26,10 @@ public class MathList {
      * @return the result of the expression as a string
      */
     public String calculateExpression(String expression) {
-        String[] parts = expression.split("\\+|\\-|\\*|\\/");
+        String[] parts = expression.split("\\+|\\-|\\*|\\/"); // Split the expression into parts based on the +, -, *, and / operators
         double num1 = Double.parseDouble(parts[0]);
         double num2 = Double.parseDouble(parts[1]);
-        String operation = expression.replaceAll("[0-9]+(\\.[0-9]+)?", "");
+        String operation = expression.replaceAll("[0-9]+(\\.[0-9]+)?", ""); // Extract the operation from the expression
 
         if (operation.equals("+")) {
             double sum = num1 + num2;
